@@ -7,8 +7,11 @@ import sys
 import json
 from pathlib import Path
 from datetime import datetime
+from dotenv import load_dotenv
 from pipeline import run_pipeline
 from render import render
+
+load_dotenv()
 
 
 def detect_language(path: Path) -> str:
